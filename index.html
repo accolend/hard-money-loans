@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hard Money Loan Checklist for Beginners</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hard Money Loan Checklist for Beginners</h1>
+    <p>Use this checklist to ensure you're prepared when seeking a hard money loan for your first project.</p>
+
+    <ul class="checklist">
+      <li class="checklist-item">
+        <input type="checkbox" id="credit_score" name="checklist[]" value="credit_score">
+        <label for="credit_score">Understand that credit score is less important, but still gather documents (proof of income, bank statements).</label>
+      </li>
+      <li class="checklist-item">
+        <input type="checkbox" id="exit_strategy" name="checklist[]" value="exit_strategy">
+        <label for="exit_strategy">Have a clear exit strategy (sell, refinance) and be prepared to explain it to the lender.</label>
+      </li>
+      <li class="checklist-item">
+        <input type="checkbox" id="property_value" name="checklist[]" value="property_value">
+        <label for="property_value">Get a reliable appraisal of the property's value.</label>
+      </li>
+      <li class="checklist-item">
+        <input type="checkbox" id="renovation_plan" name="checklist[]" value="renovation_plan" disabled>
+        <label for="renovation_plan">Prepare a detailed renovation plan (if applicable for fix-and-flip projects) - Optional, but can strengthen your application.</label>
+      </li>
+      <li class="checklist-item">
+        <input type="checkbox" id="research_lenders" name="checklist[]" value="research_lenders">
+        <label for="research_lenders">Research and compare rates and terms from multiple hard money lenders.</label>
+      </li>
+      <li class="checklist-item">
+        <input type="checkbox" id="understand_fees" name="checklist[]" value="understand_fees">
+        <label for="understand_fees">Understand the additional fees associated with hard money loans (origination, processing, etc.).</label>
+      </li>
+    </ul>
+
+    <button type="button" class="btn btn-primary" id="check-all">Check All</button>
+    <button type="button" class="btn btn-default" id="uncheck-all">Uncheck All</button>
+
+    <script>
+      // Add functionality to the "Check All" button
+      document.getElementById('check-all').addEventListener('click', function() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var i = 0; i < checkboxes.length; i++) {
+          checkboxes[i].checked = true;
+        }
+      });
+
+      // Add functionality to the "Uncheck All" button
+      document.getElementById('uncheck-all').addEventListener('click', function() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var i = 0; i < checkboxes.length; i++) {
+          checkboxes[i].checked = false;
+        }
+      });
+    </script>
+  </div>
+
+</body>
+</html>
